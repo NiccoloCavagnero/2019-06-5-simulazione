@@ -8,17 +8,13 @@ import com.javadocmd.simplelatlng.LatLng;
 public class District {
 	
 	private int id;
-	private Double lon;
-	private Double lat;
 	private LatLng coord;
 	private List<Event> list;
 
 	public District(int id, double d, double e) {
 		super();
 		this.id = id;
-		this.lon = d;
-		this.lat = e;
-		this.coord = new LatLng(this.lat,this.lon);
+		this.coord = new LatLng(d,e);
 		this.list = new ArrayList<>();
 	}
 	
