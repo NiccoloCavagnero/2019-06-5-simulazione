@@ -64,7 +64,8 @@ public class EventsDao {
 	}
 	
 	public District safer(Year year, Map<Integer,District> dMap){
-		String sql = "SELECT district_id AS id, COUNT(*) AS c FROM events WHERE year(reported_date)=? GROUP BY id ORDER BY c ASC" ;
+		String sql = "SELECT district_id AS id, COUNT(*) AS c FROM events WHERE \n"+
+	                 "year(reported_date)=? GROUP BY id ORDER BY c ASC" ;
 		try {
 			Connection conn = DBConnect.getConnection() ;
 

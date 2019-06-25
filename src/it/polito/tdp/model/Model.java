@@ -77,7 +77,4 @@ public class Model {
 	public Map<Integer, District> getdMap() {
 		return dMap;
 	}
-	
-	
-	
 }
